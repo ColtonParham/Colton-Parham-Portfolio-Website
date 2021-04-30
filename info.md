@@ -161,3 +161,16 @@ Contact Me Submission Form:
 
 (Going to be creating a wireframe using JustInMind)
 WireFrame: Will be sectioned off like any other 
+
+Touching back onto design: 
+What we will be needing to do is apply apply everything seperately and accordingly, and try to match everything as much as possible to be the same positioning to be universally coherent. 
+
+As well the styles.css file will be attached to all the HTML files due to the simplifications and making things work in unison, and allocate less resources to make the page run faster.
+
+As well - Don't forget to copy some of the information from the index page for the skelton to aide in making some things more universal. And also don't forget to link the files to each nav bar link.
+
+Also do not forget the footer for each page - consistancy is key, and for those elements, we will have those in the default setting. 
+
+Since the home page is pretty much done, we need to finish adding the information to the rest of the pages, and we will modify all of this within the css file to make sure that everything looks great. 
+
+Follow up with this information to create the links for the webpage - maybe touch back to the codecademy example: https://www.yourhtmlsource.com/myfirstsite/basiclinks.html
