@@ -35,11 +35,24 @@
         <div class = "contact-container">
           <h2>Contact Me</h2>
           <!--Will be building a form here in HTML and routing it through JS-->
-            
-
+            <form action="mailto:coltonparham@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+            name="EmailForm">
+    Name:<br>
+    <input type="text" size="19" name="Contact-Name"><br><br>
+    Email:<br>
+    <input type="email" name="Contact-Email"><br><br> 
+    Message:<br> 
+    <textarea name="Contact-Message" rows="6″ cols="20″>
+    </textarea><br><br> 
+    <button type="submit" value="Submit">Send</button>
+      </form>
       </div>
     </section>
+
   </main>
+  
   <footer>Created, and Designed by Colton Parham</footer>
 </body>
 </html>

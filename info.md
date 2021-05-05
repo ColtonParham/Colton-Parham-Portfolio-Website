@@ -174,3 +174,58 @@ Also do not forget the footer for each page - consistancy is key, and for those 
 Since the home page is pretty much done, we need to finish adding the information to the rest of the pages, and we will modify all of this within the css file to make sure that everything looks great. 
 
 Follow up with this information to create the links for the webpage - maybe touch back to the codecademy example: https://www.yourhtmlsource.com/myfirstsite/basiclinks.html
+
+ALSO DO NOT FORGET TO COMMIT - THEN PUSH ! 
+
+Alright looks like a majority of the information is already on the HTML files(booyah!)
+
+So the next step is actually applying the universal functions like media queries, html stuff, and universal traits like centering of the universal nav, and the styling. 
+
+I would also like to include simple animations like shadows over.
+
+-UPDATE-
+Changed the font to Yantramanav.
+
+Furthering research to develop the nav bar to work together correctly. 
+
+-UPDATE-
+
+Refer to DAY96 for grid info.
+
+Reference information: 
+.container {
+  display: grid;
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  grid-template-areas: "head head"
+                       "nav nav" 
+                       "info services"
+                       "footer footer";
+  grid-template-rows: 300px 120px 800px 120px;
+  grid-template-columns: 1fr 3fr; 
+}
+ 
+header {
+  grid-area: head;
+} 
+ 
+nav {
+  grid-area: nav;
+} 
+ 
+.info {
+  grid-area: info;
+} 
+ 
+.services {
+  grid-area: services;
+}
+ 
+footer {
+  grid-area: footer;
+} 
+
+-UPDATE FOR END OF NIGHT- 
+
+What we are looking to do next is that we are going to start a grid, and get everything in the direction as in accordance to what we did on the prototype. 

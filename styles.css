@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700&display=swap');
+
+html{
+  font-size: 16px;
+  font-family: 'Yantramanav', sans-serif;
+}
+
+#logo{
+  font-size: 2.3em;
+  
+}
+
+/*UL for the nav bar - trying to make it looks right - next step will probably be removing those purple lines and adjusting it to be on a grid of some breed.*/
+.nav-items{
+  list-style-type: none;
+  margin: 0;
+  /*Revise this.*/
+  padding-right: 3%;
+}
+
+/*This right here is for removing the underline on the nav links - next will be text color*/
+a{
+  text-decoration: none;
+  /*This color will be changed as needed.*/
+  color: black;
+}
+
+/*Also for the other UL that the programming lagnuages are on - make sure that has a class or an id so it can have the little dots besides it.*/
+ul .techstack {
+  list-style-type: circle;
+}
+
+.nav-items li {
+  display: inline; 
+  height: 80px;
+  line-height: 80px; 
+  list-style: none;
+  padding: 0 10px;
+  transition: background .5s; 
+  padding: 2rem;
+  
+}
+
+nav{
+  text-align: center;
+  
+}
+
+
+/*Footing Section
+
+This will also need a media query will size to a minimum of 720px I believe, and the scale will be 0.5em when being made smaller, it will be stepped down in the range increment for support for not only desktop, but mobile as well. */
+footer{
+  text-align: center;
+  font-size: 1.2em;
+}
+
+nav{
+  font-size: 1.1em;
+}
+
+/*Home Page Grid REVISE ME - REVISE ALL OF THIS AND POSSIBLY START FROM SCRATCH.*/
+
+.coltonpicture{
+  grid-area: img;
+}
+ 
+.someinfo {
+  grid-area: someinfo;
+  margin-left: 70%;
+} 
+ 
+.homebody1 {
+  grid-area: homebody1;
+  margin-left: 70%;
+} 
+ 
+.ongoingprojectheader {
+  grid-area: ongoingprojectheader;
+  margin-left: 70%;
+} 
+ 
+.homebody3 {
+  grid-area: homebody3;
+  margin-left: 70%;
+}
+ 
+.techstackhead {
+  grid-area: techstackhead;
+  margin-left: 70%;
+} 
+
+.techstack{
+  grid-area: techstack;
+  margin-left: 70%;
+}
+
+@media (min-width: 500px){
+  .grid1 {
+    display: grid;
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+    grid-template-areas: "img someinfo"
+                         "img homebody1" 
+                         "img ongoingprojectheader"
+                         "img homebody3"
+                         "techstackhead" "techstackhead"
+                         "techstack" "techstack";
+    grid-template-rows: 300px 120px 800px 120px;
+    grid-template-columns: 1fr 3fr; 
+  }
+}
