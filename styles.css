@@ -5,9 +5,9 @@ html{
   font-family: 'Yantramanav', sans-serif;
 }
 
-#logo{
+.logo{
   font-size: 2.3em;
-  
+  text-align: center;
 }
 
 /*UL for the nav bar - trying to make it looks right - next step will probably be removing those purple lines and adjusting it to be on a grid of some breed.*/
@@ -47,6 +47,8 @@ nav{
 }
 
 
+
+
 /*Footing Section
 
 This will also need a media query will size to a minimum of 720px I believe, and the scale will be 0.5em when being made smaller, it will be stepped down in the range increment for support for not only desktop, but mobile as well. */
@@ -61,39 +63,64 @@ nav{
 
 /*Home Page Grid REVISE ME - REVISE ALL OF THIS AND POSSIBLY START FROM SCRATCH.*/
 
-.coltonpicture{
-  grid-area: img;
+
+
+.image{
+  grid-area: image;
+  max-width: 10%;
 }
  
 .someinfo {
   grid-area: someinfo;
-  margin-left: 70%;
+  margin-left: 50%;
 } 
  
 .homebody1 {
   grid-area: homebody1;
-  margin-left: 70%;
+  margin-left: 50%;
 } 
  
 .ongoingprojectheader {
   grid-area: ongoingprojectheader;
-  margin-left: 70%;
+  margin-left: 50%;
 } 
  
-.homebody3 {
-  grid-area: homebody3;
-  margin-left: 70%;
+.homebody2 {
+  grid-area: homebody2;
+  margin-left: 50%;
 }
  
 .techstackhead {
   grid-area: techstackhead;
-  margin-left: 70%;
+  margin-left: 50%;
 } 
 
 .techstack{
   grid-area: techstack;
-  margin-left: 70%;
+  margin-left: 50%;
 }
+
+/*Added Temp?*/
+.logo{
+  grid-area: logo;
+}
+
+.h1heading{
+  grid-area: h1heading;
+}
+
+.nav-items{
+  grid-area: nav-items;
+  
+}
+
+footer{
+  
+  grid-area: footer;
+}
+
+/*
+Currently Testing
 
 @media (min-width: 500px){
   .grid1 {
@@ -101,13 +128,57 @@ nav{
     max-width: 1100px;
     position: relative;
     margin: auto;
-    grid-template-areas: "img someinfo"
-                         "img homebody1" 
-                         "img ongoingprojectheader"
-                         "img homebody3"
-                         "techstackhead" "techstackhead"
-                         "techstack" "techstack";
+    grid-template-areas: "coltonpicture someinfo"
+                         "coltonpicture homebody1" 
+                         "coltonpicture ongoingprojectheader"
+                         "coltonpicture homebody3"
+                         "techstackhead techstackhead"
+                         "techstack techstack";
     grid-template-rows: 300px 120px 800px 120px;
     grid-template-columns: 1fr 3fr; 
+  }
+}
+*/
+
+/*Testing*/
+.grid1{
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+  "h1heading"
+  "logo"
+  "nav-items"
+  "someinfo"
+  "homebody1"
+  "image"
+  "ongoingprojectheader"
+  "homebody2"
+  "techstackhead"
+  "techstack"
+  "footerhome";
+}
+
+@media (min-width: 500px){
+  .grid1 {
+    display: grid;
+    max-width: 1850px;
+    position: relative;
+    margin: auto;
+    grid-template-areas: "h1heading h1heading"
+                         "logo logo" 
+                         "nav-items nav-items"
+                         "someinfo someinfo"
+                         "image homebody1"
+                         "image ongoingprojectheader"
+                         "image homebody2"
+                         "image techstackhead"
+                         "image techstack"
+                         "footer footer";
+                         /*Adjust these parameters as needed.*/
+    grid-template-rows: 100px 50px 60px 60px;
+    grid-template-columns: 1fr; 
+  }
+  .someinfo .homebody1 .ongoingprojectheader .homebody2 {
+    flex-direction: column;
   }
 }

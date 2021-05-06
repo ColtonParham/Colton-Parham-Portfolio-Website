@@ -229,3 +229,6 @@ footer {
 -UPDATE FOR END OF NIGHT- 
 
 What we are looking to do next is that we are going to start a grid, and get everything in the direction as in accordance to what we did on the prototype. 
+
+Before I forget - in js make a function that will make it so that whenever the user is entering my email address it will not send - and display an error. 
+
