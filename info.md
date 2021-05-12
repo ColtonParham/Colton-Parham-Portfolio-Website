@@ -232,3 +232,4 @@ What we are looking to do next is that we are going to start a grid, and get eve
 
 Before I forget - in js make a function that will make it so that whenever the user is entering my email address it will not send - and display an error. 
 
+https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/
