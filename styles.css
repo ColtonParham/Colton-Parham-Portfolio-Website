@@ -9,16 +9,13 @@ html{
 main{
   display: grid;
 }
-.logo{
-  font-size: 2.3em;
-  text-align: center;
-}
 
-/*UL for the nav bar - trying to make it looks right - next step will probably be removing those purple lines and adjusting it to be on a grid of some breed.*/
+
+
 .nav-items{
   list-style-type: none;
-  margin: 0;
-  /*Revise this.*/
+  
+  
 }
 
 /*This right here is for removing the underline on the nav links - next will be text color*/
@@ -35,22 +32,25 @@ ul .techstack {
 
 
 .nav-items li {
-  display: inline; 
+  margin-left: 27%;
   height: 80px;
   line-height: 80px; 
   list-style: none;
   padding: 0 10px;
   transition: background .5s; 
-  padding: 2rem;
+  padding: .5rem;
   width: 100%;
+  font-size: 1.3em;
+  justify-self: center;
+  display:flexbox;
 }
 
-
+/*
 nav{
   text-align: center;
   
 }
-
+*/
 
 
 
@@ -60,6 +60,7 @@ This will also need a media query will size to a minimum of 720px I believe, and
 footer{
   text-align: center;
   font-size: 1.2em;
+  margin-top: 8%;
 }
 
 nav{
@@ -68,67 +69,73 @@ nav{
 
 /*Home Page Grid REVISE ME - REVISE ALL OF THIS AND POSSIBLY START FROM SCRATCH.*/
 
+
 .grid1{
   display:grid;
-  grid-template-columns: repeat(8,1fr);  
-  grid-template-rows: repeat(5, 5vw);
+  grid-gap: 15px;
+  grid-template-columns: 1fr 1fr;  
   
+  grid-template-areas:
+  "h1heading h1heading"
+  "logo logo"
+  "nav-items nav-items"
+  "homebody1 homebody1"
+  "homebody2 homebody2"
+  "techstack techstack"
+  "footer footer" ;
 }
 
-.grid_object{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  
-}
 
 .h1heading{
-  grid-column-start:1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-area: h1heading;
 }
 
 .logo{
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-area: logo;
+  margin-left: 24%;
+  font-size: 1.2em;
 }
 
 .nav-items{
-  grid-column-start:2;
-  grid-column-end:6;
-  grid-row-start:3;
-  grid-row-end: 4;
+  grid-area: nav-items;
+  justify-content: center;
+
 }
 
-.someinfo{
-  grid-column-start: 4;
-  grid-column-end: 8;
-  grid-row-start: 4;
-  grid-row-end: 5;
-}
+
 
 .homebody1{
-  grid-column-start: 4;
-  grid-column-end: 8;
-  grid-row-start: 5; 
-  grid-row-end: 7;
-}
-
-.ongoingprojectheader{
-  grid-column-start: 4;
-  grid-column-end: 8;
-  grid-row-start: 7;
-  grid-row-end: 8;
+  grid-area: homebody1;
+  justify-self: end;
 }
 
 .homebody2{
-  grid-column-start: 4;
-  grid-column-end: 8;
-  grid-row-start: 8;
-  grid-row-end: 9;
+  grid-area: homebody2;
+  
 }
 
+.techstack{
+  grid-area: techstack;
+}
+
+.footer{
+  grid-area: footer;
+}
+
+@media screen and (min-width: 736px){
+  .grid1{
+    display:grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;  
+    
+    grid-template-areas:
+    "h1heading h1heading"
+    "logo logo"
+    "nav-items nav-items"
+    "homebody1 homebody1"
+    "homebody2 homebody2"
+    "techstack techstack"
+    "footer footer" ;
+  }
+}
 /*Gotta redo grid - use this for reference for the design: https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/*/

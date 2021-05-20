@@ -358,3 +358,126 @@ Currently Testing
 }
 
 Reason being that I got rid of this code is that it simply does not work. Will be going with the more pain in the side method. But hopefully that will provide fruition. 
+
+(BACKUP CODE - INCASE THIS DOES NOT WORK AS NEEDED.)
+<!DOCTYPE html>
+<!--Misc Important stuff-->
+<html lang en>
+  <head>
+    <title>Colton Parham's Portfolio</title>
+    <link rel = "stylesheet" href = "./styles.css">
+  </head>
+
+<body>
+  <!--Process of revising-->
+<div class = "grid1">
+
+  <div class = "grid_item h1heading">
+    <h1 class = "grid_object"> coltonparham.tech </h1>
+  </div>
+
+  <header>
+    <div class = "grid_item logo">
+      <h2 class = "grid_object">Colton Parham</h2>
+    </div>
+
+    
+    <div class = "grid_item nav-items">
+      <nav class = "grid_object">
+        <li class = "nav-item">
+          <a href = "#home">Home</a>
+        </li>
+        <li class = "nav-item"></li>
+          <a href = "#about">About</a>
+        </li>
+        <li class = "nav-item"></li>
+          <a href = "#projects">Projects</a>
+        </li>
+        <li class = "nav-item"></li>
+          <a href = "#education">Education</a>
+        </li>
+        <li class = "nav-item"></li>
+          <a href = "#contact-me">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+      <!--Main Information for home page will be on a grid.
+      
+      GRID START 
+
+      Temp comment possibly to test.
+  <div class = "grid1">
+
+    -->
+
+    
+    <main>
+      <section id = "home-info">
+
+        <div class = "grid_item someinfo">
+          <h2 class = "grid_object">Some information about me!</h2>
+        </div>
+          <!--Body Paragraph 1-->
+          <div class = "grid_item homebody1">
+            <p class = "grid_object">Hello! My name is Colton Parham, I am currently a second year Computer Science major at UTD(Universersity of Texas at Dallas) with a primary focus in Web Development/Full Stack. I currently have 2 ongoing projects primarily focusing in education, using HTML, CSS, JS and SQL. The languages I primarily use are Javascript(Node and React Native), HTML5, CSS and SQL.</p>
+          </div>  
+            <!--Revise this area to check to see if feasible-->
+            <!--Before getting further make sure you are commiting to a fork instead of the repo itself, reference some forums online and check to make sure everything is working as intended before putting more work in. Also do not be afraid to reference to the other project we have saved on here for extra help if needed.-->
+            <!--Read through this:
+            https://stackoverflow.com/questions/11173971/commits-not-showing-up-on-github
+            -->
+
+          <div class = "grid_item ongoingprojectheader">
+            <h2 class = "grid_object">Ongoing Projects</h2>
+          </div>
+          
+            <div class = "grid_item homebody2">
+              <p class = "grid_object">Coding Education project, a website/application with the intent of being able to bring up simple explanations of general topics such as data types, and data structures. Another project I am currently working on is a Expiration code logger/reminder to aid in keeping track of when food expires.</p>
+            </div>
+
+        <!--Tech Stack Heading-->
+        <div class = "grid_item techstackhead">  
+          <h2 class = "grid_object">Tech Stack and Skills</h2>
+        </div>
+        <!--Tech Stack Information in ul.-->
+          <div class = "grid_item techstack">
+            <ul class = "grid_object">
+              <li>JavaScript(NodeJS and React Native)</li>
+              <li>HTML5</li>
+              <li>CSS</li>
+              <li>Python 3 (MatPlotLib, Numpy, Pandas, and Jupyter</li>
+              <li>Java 11</li>
+              <li>SQL/noSQL(Postgre SQL)</li>
+              <li>Git</li>
+              <li>IBM Cognos</li>
+            </ul>
+          </div>
+
+        <!--<div> Temporarily commenting this out for testing-->
+
+        <!--Div for picture-->
+        <div class = "grid_item image">
+          <img src = "portfolio-picture.jpg" alt = "A Picture of me was supposed to be here...." class = "grid_object">
+        </div>
+        <!--Picture Div end-->
+
+
+      
+    </section>
+    </main>
+  
+
+  <div class = "gird_item footer">
+    <footer class = "grid_object">Created, and Designed by Colton Parham</footer>
+  </div>
+
+  <!--Grid End Div-->
+</div>
+  </body>
+</html>
+
+(CODE END)
+
+- Also do not forget to have links to each webpage or part of the website. If can condense, do it. 
