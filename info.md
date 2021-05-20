@@ -233,3 +233,128 @@ What we are looking to do next is that we are going to start a grid, and get eve
 Before I forget - in js make a function that will make it so that whenever the user is entering my email address it will not send - and display an error. 
 
 https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/
+
+Getting rid of this code: 
+.image{
+  grid-area: image;
+  max-width: 10%;
+  overflow: visible;
+}
+ 
+.someinfo {
+  grid-area: someinfo;
+  margin-left: 50%;
+} 
+ 
+.homebody1 {
+  grid-area: homebody1;
+  margin-left: 50%;
+} 
+ 
+.ongoingprojectheader {
+  grid-area: ongoingprojectheader;
+  margin-left: 50%;
+} 
+ 
+.homebody2 {
+  grid-area: homebody2;
+  margin-left: 50%;
+}
+ 
+.techstackhead {
+  grid-area: techstackhead;
+  margin-left: 50%;
+} 
+
+.techstack{
+  grid-area: techstack;
+  margin-left: 50%;
+}
+
+/*Added Temp?*/
+.logo{
+  grid-area: logo;
+}
+
+.h1heading{
+  grid-area: h1heading;
+}
+
+.nav-items{
+  grid-area: nav-items;
+  
+}
+
+footer{
+  
+  grid-area: footer;
+}
+
+/*
+Currently Testing
+
+@media (min-width: 500px){
+  .grid1 {
+    display: grid;
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+    grid-template-areas: "coltonpicture someinfo"
+                         "coltonpicture homebody1" 
+                         "coltonpicture ongoingprojectheader"
+                         "coltonpicture homebody3"
+                         "techstackhead techstackhead"
+                         "techstack techstack";
+    grid-template-rows: 300px 120px 800px 120px;
+    grid-template-columns: 1fr 3fr; 
+  }
+}
+*/
+
+/*Testing*/
+.grid1{
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+  "h1heading"
+  "logo"
+  "nav-items"
+  "someinfo"
+  "homebody1"
+  "image"
+  "ongoingprojectheader"
+  "homebody2"
+  "techstackhead"
+  "techstack"
+  "footerhome";
+  height: 1000px;
+  
+}
+
+/*Take a look into this and rearrange as needed. - Since we got the majority part of the grid working - we have a better footing than before*/
+@media (min-width: 500px){
+  .grid1 {
+    display: grid;
+    max-width: 1850px;
+    position: relative;
+    margin: auto;
+    grid-template-areas: "h1heading h1heading"
+                         "logo logo" 
+                         "nav-items nav-items"
+                         "someinfo someinfo"
+                         "image homebody1"
+                         "image ongoingprojectheader"
+                         "image homebody2"
+                         "image techstackhead"
+                         "image techstack"
+                         "footer footer";
+                         /*Adjust these parameters as needed.*/
+    grid-template-rows: 200px 1000px 100px 600px;
+    grid-template-columns: 1fr 3fr;
+  }
+  .someinfo .homebody1 .ongoingprojectheader .homebody2 {
+    grid-auto-flow: column;
+  }
+}
+
+Reason being that I got rid of this code is that it simply does not work. Will be going with the more pain in the side method. But hopefully that will provide fruition. 
