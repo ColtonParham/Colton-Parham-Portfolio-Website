@@ -3,9 +3,12 @@
 html{
   font-size: 16px;
   font-family: 'Yantramanav', sans-serif;
+  background-color:#90afc5 ;
 }
 
-
+h2{
+  color: #665b52;
+}
 main{
   display: grid;
 }
@@ -60,7 +63,7 @@ This will also need a media query will size to a minimum of 720px I believe, and
 footer{
   text-align: center;
   font-size: 1.2em;
-  margin-top: 8%;
+  margin-top: 5%;
 }
 
 nav{
@@ -107,15 +110,20 @@ nav{
 .homebody1{
   grid-area: homebody1;
   justify-self: end;
+  padding-right: 20%
+
 }
 
 .homebody2{
   grid-area: homebody2;
+  padding-right: 20%
   
 }
 
 .techstack{
   grid-area: techstack;
+  padding-right: 20%
+
 }
 
 .footer{
