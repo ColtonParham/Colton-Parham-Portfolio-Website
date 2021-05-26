@@ -3,22 +3,22 @@
 html{
   font-size: 16px;
   font-family: 'Yantramanav', sans-serif;
-  background-color:#90afc5 ;
+  background-color:#ffffff ;
 }
 
-h2{
-  color: #665b52;
-}
+
 main{
   display: grid;
 }
 
-
+.contactme{
+  padding-left: 15%;
+}
 
 .nav-items{
   list-style-type: none;
-  
-  
+  margin-right: 10%;
+  padding-top: 5%;
 }
 
 /*This right here is for removing the underline on the nav links - next will be text color*/
@@ -33,20 +33,6 @@ ul .techstack {
   list-style-type: circle;
 }
 
-
-.nav-items li {
-  margin-left: 27%;
-  height: 80px;
-  line-height: 80px; 
-  list-style: none;
-  padding: 0 10px;
-  transition: background .5s; 
-  padding: .5rem;
-  width: 100%;
-  font-size: 1.3em;
-  justify-self: center;
-  display:flexbox;
-}
 
 /*
 nav{
@@ -105,6 +91,10 @@ nav{
 
 }
 
+
+form{
+  padding-left: 18%;
+}
 
 
 .homebody1{

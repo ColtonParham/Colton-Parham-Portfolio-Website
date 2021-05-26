@@ -481,3 +481,8 @@ Reason being that I got rid of this code is that it simply does not work. Will b
 (CODE END)
 
 - Also do not forget to have links to each webpage or part of the website. If can condense, do it. 
+
+Following back into it, we are looking to add the everything to one page if possible, with the nature of the grid being a massive pain in the ass. 
+
+So after looking through the nav-items, its become apparent that we can do a media query to resize it to make the elements scale correctly, and styling is definitely needed as it looks cheap, and lame. 
+
