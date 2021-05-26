@@ -137,3 +137,20 @@ form{
   }
 }
 /*Gotta redo grid - use this for reference for the design: https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/*/
+
+
+/*Revise this*/
+.educationbutton{
+  align-items: center;
+}
+
+
+
+/*Education Page*/
+.education-container{
+  text-align: center;
+}
+
+.educationbody1{
+  display: block;
+}
