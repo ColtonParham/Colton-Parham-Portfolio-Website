@@ -145,12 +145,21 @@ form{
 }
 
 
-
 /*Education Page*/
-.education-container{
+.educationheading{
   text-align: center;
+  padding-bottom: 2%;
 }
 
 .educationbody1{
-  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1.2em;
+}
+
+.educationbody2{
+  padding-top: 4%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1.2em;
 }
