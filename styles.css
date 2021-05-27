@@ -141,7 +141,9 @@ form{
 
 /*Revise this*/
 .educationbutton{
-  align-items: center;
+  font-size: 1.2em;
+  padding-top: 1%;
+  text-align: center;
 }
 
 
