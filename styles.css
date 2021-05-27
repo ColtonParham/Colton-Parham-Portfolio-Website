@@ -146,6 +146,22 @@ form{
   text-align: center;
 }
 
+/*Form Styling*/
+button{
+  background-color: white;
+  font-family: 'Yantramanav', sans-serif;
+}
+
+form input{
+  width: 75%;
+  font-family: 'Yantramanav', sans-serif;
+}
+
+textarea{
+  width: 75%;
+  font-family: 'Yantramanav', sans-serif;
+}
+
 
 /*Education Page*/
 .educationheading{
