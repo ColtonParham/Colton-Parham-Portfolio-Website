@@ -486,3 +486,4 @@ Following back into it, we are looking to add the everything to one page if poss
 
 So after looking through the nav-items, its become apparent that we can do a media query to resize it to make the elements scale correctly, and styling is definitely needed as it looks cheap, and lame. 
 
+FINISHED WITH REVISION ONE! Also deleted files that were not in use due to me not seeing a purpose for them. 
